@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class ejercicio1 {
+	
+	 Scanner scanner = new Scanner(System.in);
+	
+	
+	 public static void main(String[] args) {
+         System.out.println("Bienvenido a la comprobacion de premios de loteria ");
+         System.out.println("Listado de numeros premiados: ");
+		 
+		 // listado de premios y combinaciones
+		 String[] premio = {"primero", "segundo", "tercero", "cuarto", "cuarto", "quinto", "quinto", "quinto", "quinto", "quinto", "quinto", "quinto", "quinto", "pedrea", "pedrea", "pedrea", "pedrea", "pedrea", "pedrea", "pedrea", "pedrea", "pedrea", "pedrea", "pedrea", "pedrea", "pedrea", "pedrea"};
+		    int[][] array = new int[27][1];
+		    for (int i = 0; i < 27; i++) {
+		        for (int j = 0; j < 1; j++) {
+		          array[i][j] = (int) (Math.random() * (99999 )) ;
+		        }} 
+		          
+		        
+		          
+		          for (int i = 0; i < 27; i++) {
+		         
+		          
+
+		            System.out.printf("\n%9s: ", premio[i]);
+		            
+		            for (int arrays : array[i]) {
+		              System.out.printf("%05d", arrays);
+		          
+		             
+		            }}
+		            
+		          
+		      // variable numero introducido por el usuario    
+		    int[] numeros = new int[5];
+		 for (int i=0; i<numeros.length;i++) {
+		   
+		      }
+	// introducir la combinacion del usuario
+	     boolean ComprobacionTerminada = false;
+	      while (!ComprobacionTerminada) {
+	          System.out.println("Ingres su combinacion de loteria  ");
+	          System.out.println("(Ingres numero por numero)  ");
+	          int[] intento = new int[5];
+	          for (int i = 0; i < 5; i++) {
+	        	    System.out.println("Ingrese el numero:  ");
+	        	
+	          }/*
+
+	          // Comparar el intento con alguna combinacion ganadora
+	          
+	          ComprobacionTerminada = true;
+	          for (int i = 0; i < 5; i++) {
+	              if (arrays[i] == intento[i]) {
+	                  ComprobacionTerminada = false;
+	                  System.out.println(intento[i] + " Has ganado un premio");
+	                  }
+	                  else if (arrays[i] != intento[i]) {
+	                	  System.out.println(intento[i] + " No has  ganado ningun premio");
+	                  }
+	                  break;
+	              }
+	          }
+
+	          if (ComprobacionTerminada) {
+	              System.out.println("Comprobacion finalizada");
+	          }
+	      
+
+	   
+	        */  }}}
+	
