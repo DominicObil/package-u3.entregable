@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class ejercicio2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita la frase del usuario
+        System.out.println("Ingrese una frase sin tildes ni mayusculas");
+        String frase = scanner.nextLine();
+
+        // Prueba si la frase es un palindromo
+        if (esPalindromo(frase)) {
+            System.out.println("la frase un palindromo");
+        } else {
+            System.out.println("la frase no es un palindromo.");
+        }
+
+ 
+    }
+
+    // verifica si una cadena es un palindromo
+    static boolean esPalindromo(String cadena) {
+        // Quita los espacios
+        cadena = cadena.replaceAll(" ", "");
+
+     // Compara la frase de reversa con la del principio
+        return cadena.equals(new StringBuilder(cadena).reverse().toString());
+    }
+}
